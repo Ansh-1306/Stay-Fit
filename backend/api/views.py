@@ -1,6 +1,6 @@
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
-from .models import Users, UserProfiles, Exercises, Workouts, WorkoutExercises, Recipes, Diets, DietRecipes
+from .models import User, UserProfiles, Exercises, Workouts, WorkoutExercises, Recipes, Diets, DietRecipes
 from .serializers import (
     UserProfileSerializer, 
     ExerciseSerializer, 
@@ -12,14 +12,14 @@ from .serializers import (
     CreateUserSerializer
 )
 
-# Users API
+# User API
 class UserListCreateView(generics.ListCreateAPIView):
-    queryset = Users.objects.all()
+    queryset = User.objects.all()
     serializer_class = CreateUserSerializer
 
 
 class UserDetailView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Users.objects.all()
+    queryset = User.objects.all()
     serializer_class = CreateUserSerializer
 
 # UserProfiles API

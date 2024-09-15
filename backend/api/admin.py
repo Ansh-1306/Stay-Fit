@@ -6,7 +6,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 from .forms import CustomUserChangeForm, CustomUserCreationForm
 from django.contrib import admin
-from .models import Users
+from .models import User
 from .models import UserProfiles, Exercises, Workouts, WorkoutExercises, Recipes, Diets, DietRecipes
 
 # Register your models here.
@@ -15,7 +15,7 @@ class UserAdmin(BaseUserAdmin):
     ordering = ["email"]
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
-    model = Users
+    model = User
     list_display = ["email", "first_name", "last_name", "is_staff", "is_active"]
     list_display_links = ["email"]
     list_filter = ["email", "first_name", "last_name", "is_staff", "is_active"]
@@ -52,7 +52,7 @@ class UserAdmin(BaseUserAdmin):
             },),
         )
 readonly_fields = ["last_login"]
-admin.site.register(Users, UserAdmin)
+admin.site.register(User, UserAdmin)
 
 
 @admin.register(UserProfiles)
