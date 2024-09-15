@@ -72,7 +72,7 @@ function App() {
               id="home"
               aria-label="hero"
               data-section
-              style={{ backgroundImage: 'url("./assets/images/hero-bg.png")' }}
+              style={{ backgroundImage: 'url("./src/assets/images/hero-bg.png")' }}
             >
               <div className="container">
                 <div className="hero-content">
@@ -219,7 +219,7 @@ function App() {
                 <div
                   className="video-card has-before has-bg-image"
                   style={{
-                    backgroundImage: 'url("./assets/images/video-banner.jpg")',
+                    backgroundImage: 'url("./src/assets/images/video-banner.jpg")',
                   }}
                 >
                   <h2 className="h2 card-title">Explore Fitness Life</h2>
@@ -240,7 +240,7 @@ function App() {
               id="class"
               aria-label="class"
               style={{
-                backgroundImage: 'url("./assets/images/classes-bg.png")',
+                backgroundImage: 'url("./src/assets/images/classes-bg.png")',
               }}
             >
               <div className="container">
@@ -578,7 +578,7 @@ function App() {
         <footer className="footer">
           <div
             className="section footer-top bg-dark has-bg-image"
-            style={{ backgroundImage: 'url("./assets/images/footer-bg.png")' }}
+            style={{ backgroundImage: 'url("./src/assets/images/footer-bg.png")' }}
           >
             <div className="container">
               <div className="footer-brand">

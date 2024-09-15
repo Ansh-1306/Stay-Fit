@@ -1,24 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
 
   --rich-black-fogra-29_50: hsl(210, 26%, 11%, 0.5);
   --rich-black-fogra-29-1: hsl(210, 26%, 11%);
@@ -36,10 +16,6 @@
   --black_10: hsl(0, 0%, 0%, 0.1);
   --white: hsl(0, 0%, 100%);
 
-  /**
-   * typography
-   */
-
   --ff-catamaran: 'Catamaran', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
 
@@ -55,30 +31,14 @@
   --fw-700: 700;
   --fw-500: 500;
 
-  /**
-   * spacing
-   */
-
   --section-padding: 80px;
-
-  /**
-   * shadow
-   */
 
   --shadow-1: 0 0 20px var(--black_10);
   --shadow-2: 0px 10px 24px var(--coquelicot_20);
 
-  /**
-   * border radius
-   */
-
   --radius-10: 10px;
   --radius-8: 8px;
   --radius-5: 5px;
-
-  /**
-   * transition
-   */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -86,14 +46,6 @@
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -157,14 +109,6 @@ body {
 ::-webkit-scrollbar-thumb { background-color: var(--coquelicot); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: var(--rich-black-fogra-29-1); }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -341,14 +285,6 @@ body {
 
 .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 25px); }
 
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
 .header .btn { display: none; }
 
 .header {
@@ -445,14 +381,6 @@ body {
 
 .navbar-link:is(:hover, :focus, .active) { color: var(--rich-black-fogra-29-1); }
 
-
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   color: var(--cadet-gray);
   text-align: center;
@@ -519,14 +447,6 @@ body {
 
 .hero .abs-img-2 { animation-direction: alternate-reverse; }
 
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
 .about { overflow: hidden; }
 
 .about-banner { margin-block-end: 50px; }
@@ -589,13 +509,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #VIDEO
-\*-----------------------------------*/
-
 .video {
   padding-block: 0;
   margin-block-end: -250px;
@@ -643,14 +556,6 @@ body {
   0% { box-shadow: 0 0 0 0 var(--coquelicot); }
   100% { box-shadow: 0 0 0 40px transparent; }
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #CLASS
-\*-----------------------------------*/
 
 .class { padding-block-start: calc(var(--section-padding) + 250px); }
 
@@ -717,14 +622,6 @@ body {
   border-radius: inherit;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
 .blog .section-subtitle { margin-inline: auto; }
 
 .blog-card {
@@ -769,14 +666,6 @@ body {
 .blog-card .btn-link { --color: var(--coquelicot); }
 
 .blog-card .btn-link:is(:hover, :focus) { --color: var(--rich-black-fogra-29-1); }
-
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer { font-size: var(--fs-6); }
 
@@ -918,14 +807,6 @@ body {
 
 .footer-bottom-link:is(:hover, :focus) { color: var(--coquelicot); }
 
-
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
 .back-top-btn {
   position: fixed;
   bottom: 20px;
@@ -949,39 +830,14 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 575px screen
- */
-
 @media (min-width: 575px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-1: 5.8rem;
     --fs-2: 4rem;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -992,22 +848,10 @@ body {
   .hero-subtitle,
   .section-subtitle { font-size: var(--fs-5); }
 
-
-
-  /**
-   * HEADER
-   */
-
   .header .container {
     max-width: unset;
     padding-inline: 30px;
   }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero-content { padding-inline: 40px; }
 
@@ -1028,11 +872,6 @@ body {
   }
 
 
-
-  /**
-   * ABOUT
-   */
-
   .about .wrapper {
     display: flex;
     justify-content: flex-start;
@@ -1042,19 +881,8 @@ body {
 
   .about-coach { margin-block-end: 0; }
 
-
-
-  /**
-   * VIDEO
-   */
-
   .video-card .card-title { --fs-3: 3.5rem; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
@@ -1064,44 +892,16 @@ body {
 }
 
 
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-2: 4.5rem;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 720px; }
 
   .scrollbar-item { min-width: calc(50% - 12.5px); }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero-banner {
     max-width: max-content;
@@ -1113,12 +913,6 @@ body {
     right: 50px;
   }
 
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-bottom .container {
     display: flex;
     justify-content: space-between;
@@ -1129,28 +923,9 @@ body {
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
-
-  /**
-   * REUSED STYLE
-   */
-
   .container,
   .header .container { max-width: 960px; }
-
-  
-
-  /**
-   * HEADER
-   */
 
   .nav-open-btn,
   .nav-close-btn { display: none; }
@@ -1212,12 +987,6 @@ body {
 
   .header.active .btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29-1); }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero {
     background-size: contain;
     text-align: left;
@@ -1256,12 +1025,6 @@ body {
     right: 0;
   }
 
-
-
-  /**
-   * ABOUT
-   */
-
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1273,12 +1036,6 @@ body {
 
   .about .wrapper { gap: 30px; }
 
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-top .container {
     grid-template-columns: 0.85fr 0.5fr 1fr 0.85fr;
     column-gap: 50px;
@@ -1286,44 +1043,18 @@ body {
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-1: 7rem;
     --fs-2: 5.5rem;
     --fs-4: 2.2rem;
     --fs-5: 2rem;
 
-    /**
-     * spacing
-     */
-
     --section-padding: 120px;
 
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container,
   .header .container { max-width: 1140px; }
@@ -1339,19 +1070,7 @@ body {
 
   .scrollbar-item { min-width: calc(33.33% - 20px); }
 
-
-
-  /**
-   * HEADER
-   */
-
   .header .container { padding-inline: 0; }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero::after { width: 420px; }
 
@@ -1369,29 +1088,11 @@ body {
     width: 360px;
   }
 
-
-
-  /**
-   * ABOUT
-   */
-
   .about .wrapper { gap: 40px; }
-
-
-
-  /**
-   * CLASS, BLOG
-   */
 
   :is(.class-card, .blog-card) .card-content { padding: 30px; }
 
   .blog-card .card-meta { padding: 15px 30px; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container { grid-template-columns: 1fr 0.6fr 0.9fr 1fr; }
 
