@@ -7,7 +7,7 @@ from .views import (
     RecipeListCreateView, RecipeDetailView,
     DietListCreateView, DietDetailView,
     DietRecipeListCreateView, DietRecipeDetailView,
-    UserListCreateView, UserDetailView
+    UserListCreateView, UserDetailView, fetch_workout
 )
 
 urlpatterns = [
@@ -40,4 +40,6 @@ urlpatterns = [
     # DietRecipes URLs
     path('diet-recipes/', DietRecipeListCreateView.as_view(), name='dietrecipe-list-create'),
     path('diet-recipes/<int:pk>/', DietRecipeDetailView.as_view(), name='dietrecipe-detail'),
+    
+    path('fetch-workout/', fetch_workout)
 ]
