@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SignUpPage from './pages/SignUpPage'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -48,7 +49,7 @@ function App() {
                 </li>
               </ul>
             </nav>
-            <a href="#" className="btn btn-secondary">
+            <a href='#' className="btn btn-secondary">
               Join Now
             </a>
             <button
