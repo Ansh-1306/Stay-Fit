@@ -1,9 +1,7 @@
-from django.contrib.auth import get_user_model
 from djoser.serializers import UserCreateSerializer
 from rest_framework import serializers
-from .models import UserProfiles, Exercises, Workouts, WorkoutExercises, Recipes, Diets, DietRecipes
+from .models import *
 
-User = get_user_model()
 
 class CreateUserSerializer(UserCreateSerializer):
     class Meta(UserCreateSerializer.Meta):

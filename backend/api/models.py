@@ -1,9 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, Permission, Group
 from django.utils.translation import gettext_lazy as _
+from django.conf import settings
 from .managers import CustomUserManager
 
-class Users(AbstractBaseUser, PermissionsMixin): 
+class User(AbstractBaseUser, PermissionsMixin): 
     first_name = models.CharField(_("First Name"), max_length=255)
     last_name = models.CharField(_("Last Name"), max_length=255)
     email = models.EmailField(_("Email Address"),max_length=255 , unique=True)
@@ -40,7 +41,7 @@ class UserProfiles(models.Model):
         ('Maintain', 'Maintain'),
     ]
     
-    user_id=models.ForeignKey(Users, on_delete=models.CASCADE)
+    user_id=models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     first_name=models.CharField(max_length=50)
     last_name=models.CharField(max_length=50)
     height=models.IntegerField()
