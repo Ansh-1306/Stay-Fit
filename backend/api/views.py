@@ -3,6 +3,10 @@ from rest_framework import generics
 import requests
 from django.http import JsonResponse
 from rest_framework.permissions import IsAuthenticated
+import requests
+from django.http import JsonResponse
+from rest_framework.decorators import api_view
+import json
 from .models import User, UserProfiles, Exercises, Workouts, WorkoutExercises, Recipes, Diets, DietRecipes
 from .serializers import (
     UserProfileSerializer, 
@@ -15,30 +19,22 @@ from .serializers import (
     CreateUserSerializer
 )
 
-def fetch_workout_data(request):
-    if request.method == 'POST':
-        # try:
-            data = json.loads(request.body)
-            print(data)
-        #     url = "https://musclewiki.com/newapi/workout/generator/"
-        #     response = requests.post(url, json=data)
-        #     if response.status_code == 200:
-        #         return JsonResponse(response.json(), safe=False)
-        #     else:
-        #         return JsonResponse({
-        #             "error": "Failed to fetch data from the API",
-        #             "status_code": response.status_code
-        #         }, status=response.status_code)
-        # except json.JSONDecodeError:
-        #     return JsonResponse({"error": "Invalid JSON data from the frontend"}, status=400)
-        # except requests.exceptions.RequestException as e:
-        #     return JsonResponse({
-        #         "error": "An error occurred while fetching data from the external API",
-        #         "details": str(e)
-        #     }, status=500)
-    # return JsonResponse({"error": "Invalid request method. Only POST allowed."}, status=405)
+@api_view(["POST"])
+def fetch_workout(request):
+    url = "https://musclewiki.com/newapi/workout/generator/"
+    data = request.body
+    data = json.loads(data)
+    try:
+        response = requests.post(url, json=data)
+        if response.status_code == 200:
+            return JsonResponse(response.json(), safe=False)
+        else:
+            return JsonResponse({"error": "Failed to fetch data from the API", "status_code": response.status_code}, status=response.status_code)
+    
+    except requests.exceptions.RequestException as e:
+        return JsonResponse({"error": "An error occurred while fetching data from the API", "details": str(e)}, status=500)
 
-# Users API
+# User API
 class UserListCreateView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = CreateUserSerializer

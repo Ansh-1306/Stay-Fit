@@ -1,6 +1,6 @@
 ﻿import React, { useState } from "react";
 
-const FormRegistration = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -57,26 +57,25 @@ const FormRegistration = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-[90vh] bg-[#282D2D] px-5">
-      {/* <div className="flex flex-col items-end justify-start overflow-hidden mb-2 xl:max-w-3xl w-full"></div> */}
-      <div className={`xl:max-w-3xl w-full p-5 sm:p-10 rounded-md`}>
-        <h1 className="text-center text-xl sm:text-3xl font-semibold text-white">Register</h1>
-        <form onSubmit={handleSubmit} className="w-full mt-8">
-          <div className="mx-auto max-w-xs sm:max-w-md md:max-w-lg flex flex-col gap-4">
-            <div className="flex flex-col sm:flex-row gap-3">
+    <div className="flex flex-col justify-center items-center w-full h-[100vh] bg-[#1E1E1E] px-8">
+      <div className="xl:max-w-6xl w-full xl:w-1/2 lg:w-1/2 md:w-3/4 p-10 sm:p-16 rounded-md bg-[#2C2F33]">
+        <h1 className="text-center text-3xl sm:text-5xl font-semibold text-white">Register</h1>
+        <form onSubmit={handleSubmit} className="w-full mt-10">
+          <div className="mx-auto w-full sm:max-w-2xl md:max-w-4xl flex flex-col gap-7">
+            <div className="flex flex-col sm:flex-row gap-4">
               <input
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleInputChange}
-                className="w-full px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+                className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
                 type="text"
                 placeholder="Your first name"
               />
-              <input    
+              <input
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleInputChange}
-                className="w-full px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+                className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
                 type="text"
                 placeholder="Your last name"
               />
@@ -85,7 +84,7 @@ const FormRegistration = () => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="email"
               placeholder="Enter your email"
             />
@@ -93,7 +92,7 @@ const FormRegistration = () => {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="password"
               placeholder="Password"
             />
@@ -101,7 +100,7 @@ const FormRegistration = () => {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleInputChange}
-              className="w-full px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="password"
               placeholder="Confirm Password"
             />
@@ -112,7 +111,7 @@ const FormRegistration = () => {
 
             <button
               type="submit"
-              className="mt-5 tracking-wide font-semibold bg-[#E9522C] text-gray-100 w-full py-3 rounded-lg hover:bg-[#E9522C]/90 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+              className="mt-6 tracking-wide font-semibold bg-[#E9522C] text-gray-100 w-full py-5 rounded-lg hover:bg-[#E9522C]/90 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
             >
               <svg
                 className="w-6 h-6 -ml-2"
@@ -128,9 +127,10 @@ const FormRegistration = () => {
               </svg>
               <span className="ml-3">Register</span>
             </button>
-            <p className="mt-6 text-lg text-gray-600 text-center">
+
+            <p className="mt-8 text-2xl text-gray-400 text-center">
               Already have an account?{" "}
-              <a href="">
+              <a href="/login">
                 <span className="text-[#E9522C] font-semibold">Login</span>
               </a>
             </p>
@@ -141,4 +141,4 @@ const FormRegistration = () => {
   );
 };
 
-export default FormRegistration;
+export default SignUp;
