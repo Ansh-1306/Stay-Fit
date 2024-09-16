@@ -51,16 +51,15 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-[90vh] bg-[#282D2D] px-32">
-      <div className={`xl:max-w-4xl w-full p-5 sm:p-12 rounded-md`}>
-        <h1 className="text-center text-2xl sm:text-4xl font-semibold text-white">Log In</h1>
+    <div className="flex flex-col justify-center items-center w-full h-[90vh] bg-[#282D2D] px-5">
+      <div className={`xl:max-w-3xl w-full p-5 sm:p-10 rounded-md`}>
+        <h1 className="text-center text-xl sm:text-3xl font-semibold text-white">Log In</h1>
         <form onSubmit={handleSubmit} className="w-full mt-8">
-          <div className="mx-auto max-w-sm sm:max-w-lg md:max-w-xl flex flex-col gap-5 ">
             <input
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className=" w-full px-6 py-4 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-l focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full mb-4 px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
               type="email"
               placeholder="Enter your email"
             />
@@ -68,7 +67,7 @@ const LoginForm = () => {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full px-6 py-4 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-l focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full mb-4 px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
               type="password"
               placeholder="Password"
             />
@@ -79,7 +78,7 @@ const LoginForm = () => {
 
             {/* Forgot password link */}
             <div className="flex justify-center">
-              <a href="/forgot-password" className="text-xs text-[#E9522C] hover:underline">
+              <a href="/forgot-password" className="text-lg text-[#E9522C] hover:underline">
                 Forgot password?
               </a>
             </div>
@@ -109,7 +108,6 @@ const LoginForm = () => {
                 <span className="text-[#E9522C] font-semibold">Register</span>
               </a>
             </p>
-          </div>
         </form>
       </div>
     </div>
