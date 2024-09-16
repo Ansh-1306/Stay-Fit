@@ -1,6 +1,6 @@
 ﻿import React, { useState } from "react";
 
-const LoginForm = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -17,17 +17,13 @@ const LoginForm = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Clear any previous error messages
     setErrorMessage("");
 
-    // Simple validation (can be expanded based on needs)
     if (!formData.email || !formData.password) {
       setErrorMessage("Please fill in both fields.");
       return;
     }
 
-    // API call logic here
     try {
       const response = await fetch("https://api.example.com/login", {
         method: "POST",
@@ -39,10 +35,8 @@ const LoginForm = () => {
 
       const result = await response.json();
       if (response.ok) {
-        // Handle successful login
         alert("Login successful");
       } else {
-        // Handle login error
         setErrorMessage(result.message || "Login failed");
       }
     } catch (error) {
@@ -51,15 +45,20 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-[90vh] bg-[#282D2D] px-5">
-      <div className={`xl:max-w-3xl w-full p-5 sm:p-10 rounded-md`}>
-        <h1 className="text-center text-xl sm:text-3xl font-semibold text-white">Log In</h1>
-        <form onSubmit={handleSubmit} className="w-full mt-8">
+    <div className="flex flex-col justify-center  items-center w-full h-[100vh] bg-[#1E1E1E] px-8">
+      <div
+        className={`xl:max-w-6xl w-full xl:w-1/2 lg:w-1/2 md:w-3/4 p-10 sm:p-16 rounded-md bg-[#2C2F33] `}
+      >
+        <h1 className="text-center text-3xl sm:text-5xl font-semibold text-white">
+          Login
+        </h1>
+        <form onSubmit={handleSubmit} className="w-full mt-10">
+          <div className="mx-auto w-full sm:max-w-2xl md:max-w-4xl flex flex-col gap-7">
             <input
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full mb-4 px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-md focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="email"
               placeholder="Enter your email"
             />
@@ -67,7 +66,7 @@ const LoginForm = () => {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full mb-4 px-5 py-3 rounded-lg font-medium border-2 border-transparent placeholder-gray-500 text-sm focus:outline-none bg-gray-100 text-black focus:border-black"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400  focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="password"
               placeholder="Password"
             />
@@ -76,16 +75,18 @@ const LoginForm = () => {
               <p className="text-red-500 text-sm mt-1">{errorMessage}</p>
             )}
 
-            {/* Forgot password link */}
-            <div className="flex justify-center">
-              <a href="/forgot-password" className="text-lg text-[#E9522C] hover:underline">
+            <div className="flex justify-end">
+              <a
+                href="/forgot-password"
+                className="text-md text-[#E9522C] hover:underline"
+              >
                 Forgot password?
               </a>
             </div>
 
             <button
               type="submit"
-              className="mt-5 tracking-wide font-semibold bg-[#E9522C] text-gray-100 w-full py-4 rounded-lg hover:bg-[#E9522C]/90 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+              className="mt-6  tracking-wide font-semibold bg-[#E9522C] text-gray-100 w-full py-5 rounded-lg hover:bg-[#E9522C]/90 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
             >
               <svg
                 className="w-6 h-6 -ml-2"
@@ -99,19 +100,20 @@ const LoginForm = () => {
                 <circle cx="8.5" cy="7" r="4" />
                 <path d="M20 8v6M23 11h-6" />
               </svg>
-              <span className="ml-3">LogIn</span>
+              <span className="ml-3 text-md">Login</span>
             </button>
 
-            <p className="mt-6 text-s text-gray-600 text-center">
+            <p className="mt-8  text-gray-400 text-center">
               Don't have an account?{" "}
-              <a href="">
+              <a href="/signup">
                 <span className="text-[#E9522C] font-semibold">Register</span>
               </a>
             </p>
+          </div>
         </form>
       </div>
     </div>
   );
 };
 
-export default LoginForm;
+export default Login;
