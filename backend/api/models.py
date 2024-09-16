@@ -51,6 +51,10 @@ class UserProfiles(models.Model):
     goals=models.CharField(choices=GOALS_CHOICES, max_length=50)
     is_active=models.BooleanField(default=True)
     
+    class Meta:
+        verbose_name = _("User Profile")
+        verbose_name_plural = _("User Profiles")
+    
     def __str__(self):
         return self.first_name + " "+ self.last_name
     

@@ -1,4 +1,7 @@
+import json
 from rest_framework import generics
+import requests
+from django.http import JsonResponse
 from rest_framework.permissions import IsAuthenticated
 from .models import User, UserProfiles, Exercises, Workouts, WorkoutExercises, Recipes, Diets, DietRecipes
 from .serializers import (
@@ -12,7 +15,30 @@ from .serializers import (
     CreateUserSerializer
 )
 
-# User API
+def fetch_workout_data(request):
+    if request.method == 'POST':
+        # try:
+            data = json.loads(request.body)
+            print(data)
+        #     url = "https://musclewiki.com/newapi/workout/generator/"
+        #     response = requests.post(url, json=data)
+        #     if response.status_code == 200:
+        #         return JsonResponse(response.json(), safe=False)
+        #     else:
+        #         return JsonResponse({
+        #             "error": "Failed to fetch data from the API",
+        #             "status_code": response.status_code
+        #         }, status=response.status_code)
+        # except json.JSONDecodeError:
+        #     return JsonResponse({"error": "Invalid JSON data from the frontend"}, status=400)
+        # except requests.exceptions.RequestException as e:
+        #     return JsonResponse({
+        #         "error": "An error occurred while fetching data from the external API",
+        #         "details": str(e)
+        #     }, status=500)
+    # return JsonResponse({"error": "Invalid request method. Only POST allowed."}, status=405)
+
+# Users API
 class UserListCreateView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = CreateUserSerializer

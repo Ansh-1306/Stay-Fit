@@ -1,4 +1,4 @@
-from django.urls import include, path
+from django.urls import path
 from .views import (
     UserProfileListCreateView, UserProfileDetailView,
     ExerciseListCreateView, ExerciseDetailView,
@@ -11,8 +11,10 @@ from .views import (
 )
 
 urlpatterns = [
+     # Users URLs
     path('users/', UserListCreateView.as_view(), name='user-list-create'),
     path('users/<int:pk>/', UserDetailView.as_view(), name='user-detail'),
+    
     # UserProfiles URLs
     path('userprofiles/', UserProfileListCreateView.as_view(), name='userprofile-list-create'),
     path('userprofiles/<int:pk>/', UserProfileDetailView.as_view(), name='userprofile-detail'),
@@ -40,4 +42,5 @@ urlpatterns = [
     # DietRecipes URLs
     path('diet-recipes/', DietRecipeListCreateView.as_view(), name='dietrecipe-list-create'),
     path('diet-recipes/<int:pk>/', DietRecipeDetailView.as_view(), name='dietrecipe-detail'),
+    
 ]

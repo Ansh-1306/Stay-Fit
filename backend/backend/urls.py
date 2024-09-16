@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from api.views import fetch_workout_data
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('api.urls')),
     path("auth/", include('djoser.urls')),
     path("auth/", include('djoser.urls.jwt')),
+    path('fetch-workout/', fetch_workout_data, name='fetch-workout-data')
 ]
