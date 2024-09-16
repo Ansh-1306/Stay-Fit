@@ -73,7 +73,7 @@ function Footer() {
           </ul>
 
           {/* Contact Info */}
-          <ul className="footer-list">
+          <ul className="footer-list  " id='contact'>
             <li>
               <p className="footer-list-title has-before">Contact Us</p>
             </li>

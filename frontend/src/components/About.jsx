@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import trackProgress from '../assets/images/track-progress.png';
+import trackProgress from '../assets/images/fitnessTracking.avif';
 
 function About() {
   return (

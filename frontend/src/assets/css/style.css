@@ -53,6 +53,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: ; */
 }
 
 li { list-style: none; }
@@ -447,7 +448,8 @@ body {
 
 .hero .abs-img-2 { animation-direction: alternate-reverse; }
 
-.about { overflow: hidden; }
+.about { overflow: hidden; 
+background-color: var(--silver-metallic );}
 
 .about-banner { margin-block-end: 50px; }
 
@@ -510,6 +512,7 @@ body {
 
 
 .video {
+  
   padding-block: 0;
   margin-block-end: -250px;
 }
@@ -557,11 +560,15 @@ body {
   100% { box-shadow: 0 0 0 40px transparent; }
 }
 
-.class { padding-block-start: calc(var(--section-padding) + 250px); }
+.goals{
+  background-color: var(--rich-black-fogra-29-1);
+  color:var(--white);
+}
+.class { padding-block-start: calc(var(--section-padding) + 250px); 
+}
 
-.class .section-subtitle { margin-inline: auto; }
-
-.class .section-title { color: var(--white); }
+ .section-subtitle { margin-inline: auto;color: var(--white); }
+.section-title { color: var(--white); }
 
 .class-card {
   background-color: var(--white);
@@ -622,7 +629,11 @@ body {
   border-radius: inherit;
 }
 
-.blog .section-subtitle { margin-inline: auto; }
+.blog{
+  background-color: var(--silver-metallic);
+}
+.blog .section-subtitle { margin-inline: auto;
+ }
 
 .blog-card {
   background-color: var(--white);
