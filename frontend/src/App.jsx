@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage'
 import LoginPage from './pages/LoginPage'
 import SignUpPage from './pages/SignUpPage'
 import Data from "./templates/Data";
+import Fig from "./components/Fig";
 
 function App() {
   const router = createBrowserRouter(
@@ -12,6 +13,7 @@ function App() {
         <Route path="/data" element={<Data />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/fig" element={<Fig />} />
         {/* <Route path="/activate/:uid/:token" element={<ActivatePage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/password/reset/confirm/:uid/:token" element={<ResetPasswordPageConfirm />} /> */}
