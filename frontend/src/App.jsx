@@ -6,11 +6,13 @@ import Data from "./templates/Data";
 import Fig from "./components/Fig";
 import Protected from "./components/Protected";
 import Demo from "./templates/Demo"
-import ExercisePage from "./pages/ExercisePage";
-import ExerciseCard from "./components/ExerciseCard";
+// import ExercisePage from "./pages/ExercisePage";
 import ActivationPage from "./components/ActivationPage";
 import ResetPasswordPage from "./components/ResetPasswordPage"
 import ResetPasswordPageConfirm from "./components/ResetPasswordPageConfirm"
+import FitnessWizard from "./components/wizard/FitnessWizard"
+import ExerciseCard from "./templates/ExerciseCard";
+import ExercisePage from "./templates/ExercisePage";
 import { ToastContainer } from"react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,9 +27,11 @@ function App() {
         <Route path="/fig" element={<Fig />} />
         <Route path="/nextpage" element={<Demo />} />
         <Route path="/exercisePage" element={<ExercisePage />} />
+        <Route path="/wizard" element={<FitnessWizard />} />
         <Route path="/exerciseComponent" element={<ExerciseCard />} />
         <Route path="/activate/:uid/:token" element={<ActivationPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/demo" element={<ExercisePage />} />
         <Route path="/password/reset/confirm/:uid/:token" element={<ResetPasswordPageConfirm />} />
       </>
     )
