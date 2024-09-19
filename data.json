@@ -1,0 +1,1155 @@
+{
+    "exercises": [
+        {
+            "exercise": {
+                "id": 182,
+                "muscles_primary": [
+                    {
+                        "id": 2,
+                        "name": "Chest",
+                        "name_en_us": "Chest",
+                        "scientific_name": null,
+                        "url_name": "Chest",
+                        "description": "Primarily, there are three chest muscles involved in movement: the pectoralis major, the pectoralis minor, and the serratus anterior.\r\n\r\nPectoral muscles are most predominantly associated with movement of the shoulders and arms. When working together, they provide stability for bone structures such as the clavicle (collar bone) and the scapula (shoulder). Muscles of the chest enable us to lift, extend, and rotate our arms, along with playing a part in the process of respiration. Chest muscles are required in order to carry out everyday activities like moving furniture, lifting heavy objects, pitching a baseball, and stretching our arms.",
+                        "description_en_us": "Primarily, there are three chest muscles involved in movement: the pectoralis major, the pectoralis minor, and the serratus anterior.\r\n\r\nPectoral muscles are most predominantly associated with movement of the shoulders and arms. When working together, they provide stability for bone structures such as the clavicle (collar bone) and the scapula (shoulder). Muscles of the chest enable us to lift, extend, and rotate our arms, along with playing a part in the process of respiration. Chest muscles are required in order to carry out everyday activities like moving furniture, lifting heavy objects, pitching a baseball, and stretching our arms.",
+                        "lft": 1,
+                        "rght": 6,
+                        "tree_id": 14,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 1,
+                    "name": "Beginner",
+                    "name_en_us": "Beginner"
+                },
+                "male_images": [
+                    {
+                        "id": 5186,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-push-up-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-push-up-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-push-up-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-push-up-front.mp4",
+                        "gender": 1,
+                        "exercise": 182
+                    },
+                    {
+                        "id": 5187,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-push-up-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-push-up-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-push-up-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-push-up-side.mp4",
+                        "gender": 1,
+                        "exercise": 182
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 5113,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-push-up-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-push-up-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-push-up-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-push-up-front.mp4",
+                        "gender": 2,
+                        "exercise": 182
+                    },
+                    {
+                        "id": 5115,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-push-up-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-push-up-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-push-up-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-push-up-side.mp4",
+                        "gender": 2,
+                        "exercise": 182
+                    }
+                ],
+                "full_measure": {
+                    "id": 4,
+                    "measure": {
+                        "id": 2,
+                        "units": [
+                            {
+                                "id": 4,
+                                "name": "lbs"
+                            },
+                            {
+                                "id": 5,
+                                "name": "kg"
+                            }
+                        ],
+                        "name": "weight"
+                    },
+                    "denominator": {
+                        "id": 1,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "calculation_mode": {
+                        "id": 2,
+                        "name": "MUL",
+                        "description": ""
+                    }
+                },
+                "name": "Push Up",
+                "slug": "push-up",
+                "featured_weight": 450
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "chest",
+                    "fatigue": 2,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#fafdb8"
+                },
+                {
+                    "muscle_name": "anterior-deltoid",
+                    "fatigue": 1.34,
+                    "daily_gradient": "#ffcc66",
+                    "weekly_gradient": "#fafdb8"
+                },
+                {
+                    "muscle_name": "triceps",
+                    "fatigue": 1.34,
+                    "daily_gradient": "#ffcc66",
+                    "weekly_gradient": "#fafdb8"
+                }
+            ],
+            "reps": "3-5",
+            "sets": {
+                "regular": 2,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 327,
+                "muscles_primary": [
+                    {
+                        "id": 12,
+                        "name": "Abdominals",
+                        "name_en_us": "Abdominals",
+                        "scientific_name": null,
+                        "url_name": "Abdominals",
+                        "description": "Aesthetically, the abs are seen as one of the most desirable muscles to possess. To the majority of people, abs consist of only the “6 pack,” however, this is only one part of the abdominals.",
+                        "description_en_us": "Aesthetically, the abs are seen as one of the most desirable muscles to possess. To the majority of people, abs consist of only the “6 pack,” however, this is only one part of the abdominals.",
+                        "lft": 1,
+                        "rght": 6,
+                        "tree_id": 4,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 4,
+                    "name": "Novice",
+                    "name_en_us": "Novice"
+                },
+                "male_images": [
+                    {
+                        "id": 1466,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": "https://media.musclewiki.com/media/nofile.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-bodyweight-hand-plank-side_GnZ2NZh.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-hand-plank-side_GnZ2NZh.mp4",
+                        "gender": 1,
+                        "exercise": 327
+                    },
+                    {
+                        "id": 1467,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": "https://media.musclewiki.com/media/nofile.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-bodyweight-hand-plank-front_ZnMlFBF.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-hand-plank-front_ZnMlFBF.mp4",
+                        "gender": 1,
+                        "exercise": 327
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 1468,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": "https://media.musclewiki.com/media/nofile.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-bodyweight-hand-plank-side_PurCsSV.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-bodyweight-hand-plank-side_PurCsSV.mp4",
+                        "gender": 2,
+                        "exercise": 327
+                    },
+                    {
+                        "id": 1469,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": "https://media.musclewiki.com/media/nofile.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-bodyweight-hand-plank-front_SFgElyI.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-bodyweight-hand-plank-front_SFgElyI.mp4",
+                        "gender": 2,
+                        "exercise": 327
+                    }
+                ],
+                "full_measure": {
+                    "id": 18,
+                    "measure": {
+                        "id": 4,
+                        "units": [
+                            {
+                                "id": 8,
+                                "name": "mm:ss"
+                            }
+                        ],
+                        "name": "duration"
+                    },
+                    "denominator": null,
+                    "calculation_mode": {
+                        "id": 3,
+                        "name": "SUM",
+                        "description": ""
+                    }
+                },
+                "name": "Hand Plank",
+                "slug": "hand-plank",
+                "featured_weight": 390
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "abdominals",
+                    "fatigue": 3,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#fafdb8"
+                }
+            ],
+            "reps": "20-60s",
+            "sets": {
+                "regular": 3,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 18,
+                "muscles_primary": [
+                    {
+                        "id": 5,
+                        "name": "Triceps",
+                        "name_en_us": "Triceps",
+                        "scientific_name": null,
+                        "url_name": "Triceps",
+                        "description": "The triceps are a muscle with three heads, hence the name. Those heads are the long head, lateral head, and medial head. The triceps are traditionally considered a powerhouse due to their overwhelmingly fast twitch. This expression refers to muscle fibers which expend energy quickly, and the triceps are particularly dominant in this trait. The triceps are involved during any pushing movement.",
+                        "description_en_us": "The triceps are a muscle with three heads, hence the name. Those heads are the long head, lateral head, and medial head. The triceps are traditionally considered a powerhouse due to their overwhelmingly fast twitch. This expression refers to muscle fibers which expend energy quickly, and the triceps are particularly dominant in this trait. The triceps are involved during any pushing movement.",
+                        "lft": 1,
+                        "rght": 8,
+                        "tree_id": 11,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 4,
+                    "name": "Novice",
+                    "name_en_us": "Novice"
+                },
+                "male_images": [
+                    {
+                        "id": 7360,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-bench-dips-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-bench-dips-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-bench-dips-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bench-dips-front.mp4",
+                        "gender": 1,
+                        "exercise": 18
+                    },
+                    {
+                        "id": 7361,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-bench-dips-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-bench-dips-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-bench-dips-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bench-dips-side.mp4",
+                        "gender": 1,
+                        "exercise": 18
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 7358,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-bench-dips-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-bench-dips-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-bench-dips-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-bench-dips-side.mp4",
+                        "gender": 2,
+                        "exercise": 18
+                    },
+                    {
+                        "id": 7359,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-bench-dips-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-bench-dips-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-bench-dips-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-bench-dips-front.mp4",
+                        "gender": 2,
+                        "exercise": 18
+                    }
+                ],
+                "full_measure": {
+                    "id": 19,
+                    "measure": {
+                        "id": 7,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "denominator": null,
+                    "calculation_mode": {
+                        "id": 3,
+                        "name": "SUM",
+                        "description": ""
+                    }
+                },
+                "name": "Bench Dips",
+                "slug": "bench-dips",
+                "featured_weight": 260
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "triceps",
+                    "fatigue": 2,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#ffcc99"
+                }
+            ],
+            "reps": "20-60s",
+            "sets": {
+                "regular": 2,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 190,
+                "muscles_primary": [
+                    {
+                        "id": 9,
+                        "name": "Glutes",
+                        "name_en_us": "Glutes",
+                        "scientific_name": null,
+                        "url_name": "Glutes",
+                        "description": "With regard to desirability, the glutes are gaining in popularity, however the glutes are far more than something nice to look at. The gluteus maximus is the largest muscle in the body and serves many important functions.",
+                        "description_en_us": "With regard to desirability, the glutes are gaining in popularity, however the glutes are far more than something nice to look at. The gluteus maximus is the largest muscle in the body and serves many important functions.",
+                        "lft": 1,
+                        "rght": 6,
+                        "tree_id": 7,
+                        "level": 0,
+                        "parent": null
+                    },
+                    {
+                        "id": 3,
+                        "name": "Quads",
+                        "name_en_us": "Quads",
+                        "scientific_name": null,
+                        "url_name": "Quads",
+                        "description": "The quadriceps consist of four heads (hence the name quadriceps). The heads are: the rectus femoris, vastus lateralis, vastus medialis, and vastus intermedius.\r\n\r\nWith the exception of the rectus femoris, all of the heads of the quadriceps have one function, which is extending the knee.\r\n\r\nThat means that the quadriceps are active every time you walk or stand up. Additionally, and in conjunction with the hamstrings, the quadriceps stabilizes the knee.",
+                        "description_en_us": "The quadriceps consist of four heads (hence the name quadriceps). The heads are: the rectus femoris, vastus lateralis, vastus medialis, and vastus intermedius.\r\n\r\nWith the exception of the rectus femoris, all of the heads of the quadriceps have one function, which is extending the knee.\r\n\r\nThat means that the quadriceps are active every time you walk or stand up. Additionally, and in conjunction with the hamstrings, the quadriceps stabilizes the knee.",
+                        "lft": 1,
+                        "rght": 10,
+                        "tree_id": 13,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 4,
+                    "name": "Novice",
+                    "name_en_us": "Novice"
+                },
+                "male_images": [
+                    {
+                        "id": 5168,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-forward-lunges-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-forward-lunges-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-forward-lunges-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-front.mp4",
+                        "gender": 1,
+                        "exercise": 190
+                    },
+                    {
+                        "id": 5169,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-forward-lunges-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-forward-lunges-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-forward-lunges-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-side.mp4",
+                        "gender": 1,
+                        "exercise": 190
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 5098,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-forward-lunges-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-forward-lunges-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-forward-lunges-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-forward-lunges-front.mp4",
+                        "gender": 2,
+                        "exercise": 190
+                    },
+                    {
+                        "id": 5099,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-forward-lunges-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-forward-lunges-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-forward-lunges-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-forward-lunges-side.mp4",
+                        "gender": 2,
+                        "exercise": 190
+                    }
+                ],
+                "full_measure": {
+                    "id": 4,
+                    "measure": {
+                        "id": 2,
+                        "units": [
+                            {
+                                "id": 4,
+                                "name": "lbs"
+                            },
+                            {
+                                "id": 5,
+                                "name": "kg"
+                            }
+                        ],
+                        "name": "weight"
+                    },
+                    "denominator": {
+                        "id": 1,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "calculation_mode": {
+                        "id": 2,
+                        "name": "MUL",
+                        "description": ""
+                    }
+                },
+                "name": "Forward Lunges",
+                "slug": "forward-lunges",
+                "featured_weight": 259
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "glutes",
+                    "fatigue": 3,
+                    "daily_gradient": "#ff9966",
+                    "weekly_gradient": "#fafdb8"
+                },
+                {
+                    "muscle_name": "quads",
+                    "fatigue": 3,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#fafdb8"
+                }
+            ],
+            "reps": "3-5",
+            "sets": {
+                "regular": 3,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 183,
+                "muscles_primary": [
+                    {
+                        "id": 14,
+                        "name": "Traps (mid-back)",
+                        "name_en_us": "Traps (mid-back)",
+                        "scientific_name": null,
+                        "url_name": "traps-middle",
+                        "description": "There is far more to the trapezius muscle than meets the eye. The traps are not just the muscle that sits on top of your shoulders. The traps actually travel a large portion of your spine. When well developed, the traps take on the look of a cobra hood.\r\n\r\nThe traps are divided into three portions. Those portions are referred to as the superior, medial, and inferior fibers. All three parts serve similar, but different functions.",
+                        "description_en_us": "There is far more to the trapezius muscle than meets the eye. The traps are not just the muscle that sits on top of your shoulders. The traps actually travel a large portion of your spine. When well developed, the traps take on the look of a cobra hood.\r\n\r\nThe traps are divided into three portions. Those portions are referred to as the superior, medial, and inferior fibers. All three parts serve similar, but different functions.",
+                        "lft": 1,
+                        "rght": 2,
+                        "tree_id": 2,
+                        "level": 0,
+                        "parent": null
+                    },
+                    {
+                        "id": 7,
+                        "name": "Lats",
+                        "name_en_us": "Lats",
+                        "scientific_name": null,
+                        "url_name": "Lats",
+                        "description": "The lats are a large flat muscle that has origin points at the mid and lower spine, the iliac crest (pelvis), and the ribs. Well-developed lats give the appearance of a wider back, therefore making the waist look smaller.",
+                        "description_en_us": "The lats are a large flat muscle that has origin points at the mid and lower spine, the iliac crest (pelvis), and the ribs. Well-developed lats give the appearance of a wider back, therefore making the waist look smaller.",
+                        "lft": 1,
+                        "rght": 2,
+                        "tree_id": 9,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 1,
+                    "name": "Beginner",
+                    "name_en_us": "Beginner"
+                },
+                "male_images": [
+                    {
+                        "id": 890,
+                        "order": 1,
+                        "dst_link": "https://youtu.be/EuT4-4OFySE",
+                        "src_image": "https://media.musclewiki.com/media/uploads/male-bodyweight-reverse-row-front.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-bodyweight-reverse-row-front.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-reverse-row-front.mp4",
+                        "gender": 1,
+                        "exercise": 183
+                    },
+                    {
+                        "id": 891,
+                        "order": 2,
+                        "dst_link": "https://youtu.be/EuT4-4OFySE",
+                        "src_image": "https://media.musclewiki.com/media/uploads/male-bodyweight-reverse-row-side.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-bodyweight-reverse-row-side.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-reverse-row-side.mp4",
+                        "gender": 1,
+                        "exercise": 183
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 892,
+                        "order": 1,
+                        "dst_link": "https://youtu.be/YQG_uoTFLuk",
+                        "src_image": "https://media.musclewiki.com/media/uploads/female-bodyweight-reverse-row-front.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-bodyweight-reverse-row-front.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-bodyweight-reverse-row-front.mp4",
+                        "gender": 2,
+                        "exercise": 183
+                    },
+                    {
+                        "id": 893,
+                        "order": 2,
+                        "dst_link": "https://youtu.be/YQG_uoTFLuk",
+                        "src_image": "https://media.musclewiki.com/media/uploads/female-bodyweight-reverse-row-side.gif",
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-bodyweight-reverse-row-side.jpg",
+                        "original_video": null,
+                        "unbranded_video": null,
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-bodyweight-reverse-row-side.mp4",
+                        "gender": 2,
+                        "exercise": 183
+                    }
+                ],
+                "full_measure": {
+                    "id": 4,
+                    "measure": {
+                        "id": 2,
+                        "units": [
+                            {
+                                "id": 4,
+                                "name": "lbs"
+                            },
+                            {
+                                "id": 5,
+                                "name": "kg"
+                            }
+                        ],
+                        "name": "weight"
+                    },
+                    "denominator": {
+                        "id": 1,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "calculation_mode": {
+                        "id": 2,
+                        "name": "MUL",
+                        "description": ""
+                    }
+                },
+                "name": "Inverted Row",
+                "slug": "inverted-row",
+                "featured_weight": 250
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "traps-middle",
+                    "fatigue": 3,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#fafdb8"
+                },
+                {
+                    "muscle_name": "lats",
+                    "fatigue": 3,
+                    "daily_gradient": "#ff9966",
+                    "weekly_gradient": "#fafdb8"
+                },
+                {
+                    "muscle_name": "biceps",
+                    "fatigue": 2.0100000000000002,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#ffcc99"
+                },
+                {
+                    "muscle_name": "forearms",
+                    "fatigue": 1.5,
+                    "daily_gradient": "#ffcc99",
+                    "weekly_gradient": "#f4f7fa"
+                }
+            ],
+            "reps": "4-8",
+            "sets": {
+                "regular": 3,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 202,
+                "muscles_primary": [
+                    {
+                        "id": 11,
+                        "name": "Calves",
+                        "name_en_us": "Calves",
+                        "scientific_name": null,
+                        "url_name": "Calves",
+                        "description": "The calves are composed of two muscles, the gastrocnemius, and the soleus. Both muscles are active every time the ankle joint flexes. In other words, the calves are involved every time you take a step, stand up, or jump.",
+                        "description_en_us": "The calves are composed of two muscles, the gastrocnemius, and the soleus. Both muscles are active every time the ankle joint flexes. In other words, the calves are involved every time you take a step, stand up, or jump.",
+                        "lft": 1,
+                        "rght": 8,
+                        "tree_id": 5,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 4,
+                    "name": "Novice",
+                    "name_en_us": "Novice"
+                },
+                "male_images": [
+                    {
+                        "id": 5204,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-calf-raises-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-calf-raises-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-calf-raises-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-calf-raises-front.mp4",
+                        "gender": 1,
+                        "exercise": 202
+                    },
+                    {
+                        "id": 5205,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-calf-raises-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-calf-raises-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-calf-raises-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-calf-raises-side.mp4",
+                        "gender": 1,
+                        "exercise": 202
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 5206,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-calf-raises-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-calf-raises-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-calf-raises-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-calf-raises-side.mp4",
+                        "gender": 2,
+                        "exercise": 202
+                    },
+                    {
+                        "id": 5207,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-calf-raises-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-calf-raises-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-calf-raises-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-calf-raises-front.mp4",
+                        "gender": 2,
+                        "exercise": 202
+                    }
+                ],
+                "full_measure": {
+                    "id": 19,
+                    "measure": {
+                        "id": 7,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "denominator": null,
+                    "calculation_mode": {
+                        "id": 3,
+                        "name": "SUM",
+                        "description": ""
+                    }
+                },
+                "name": "Calf Raises",
+                "slug": "calf-raises",
+                "featured_weight": 200
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "calves",
+                    "fatigue": 4,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#fafdb8"
+                }
+            ],
+            "reps": "20-60s",
+            "sets": {
+                "regular": 4,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 196,
+                "muscles_primary": [
+                    {
+                        "id": 8,
+                        "name": "Hamstrings",
+                        "name_en_us": "Hamstrings",
+                        "scientific_name": null,
+                        "url_name": "Hamstrings",
+                        "description": "The hamstrings are the big muscles on the back of your thighs. Together with the quadriceps, the hamstrings make walking and standing possible.\r\n\r\nThe hamstrings are made up of the following muscles - the biceps femoris (short and long head), the semimembranosus, and the semitendinosus.\r\n\r\nThe hamstrings are a weak muscle when compared with the quadriceps (front thigh muscle). Both the hamstrings and the quadriceps pull on the knee joint, so if one of those muscles is stronger than the other, then knee problems are bound to arise. A good rule of thumb is to make sure that the hamstrings are 2/3 as strong as the quadriceps. For example, if you can resist 100 lbs with your quads, then you should be able to resist 66 lbs with your hamstrings.",
+                        "description_en_us": "The hamstrings are the big muscles on the back of your thighs. Together with the quadriceps, the hamstrings make walking and standing possible.\r\n\r\nThe hamstrings are made up of the following muscles - the biceps femoris (short and long head), the semimembranosus, and the semitendinosus.\r\n\r\nThe hamstrings are a weak muscle when compared with the quadriceps (front thigh muscle). Both the hamstrings and the quadriceps pull on the knee joint, so if one of those muscles is stronger than the other, then knee problems are bound to arise. A good rule of thumb is to make sure that the hamstrings are 2/3 as strong as the quadriceps. For example, if you can resist 100 lbs with your quads, then you should be able to resist 66 lbs with your hamstrings.",
+                        "lft": 1,
+                        "rght": 6,
+                        "tree_id": 8,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 4,
+                    "name": "Novice",
+                    "name_en_us": "Novice"
+                },
+                "male_images": [
+                    {
+                        "id": 5180,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-kickbacks-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-kickbacks-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-kickbacks-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-kickbacks-front.mp4",
+                        "gender": 1,
+                        "exercise": 196
+                    },
+                    {
+                        "id": 5181,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-kickbacks-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-kickbacks-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-kickbacks-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-kickbacks-side.mp4",
+                        "gender": 1,
+                        "exercise": 196
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 5118,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-kickbacks-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-kickbacks-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-kickbacks-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-kickbacks-front.mp4",
+                        "gender": 2,
+                        "exercise": 196
+                    },
+                    {
+                        "id": 5119,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-kickbacks-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-kickbacks-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-kickbacks-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-kickbacks-side.mp4",
+                        "gender": 2,
+                        "exercise": 196
+                    }
+                ],
+                "full_measure": {
+                    "id": 4,
+                    "measure": {
+                        "id": 2,
+                        "units": [
+                            {
+                                "id": 4,
+                                "name": "lbs"
+                            },
+                            {
+                                "id": 5,
+                                "name": "kg"
+                            }
+                        ],
+                        "name": "weight"
+                    },
+                    "denominator": {
+                        "id": 1,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "calculation_mode": {
+                        "id": 2,
+                        "name": "MUL",
+                        "description": ""
+                    }
+                },
+                "name": "Kickbacks",
+                "slug": "kickbacks",
+                "featured_weight": 12
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "hamstrings",
+                    "fatigue": 2,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#ffcc99"
+                }
+            ],
+            "reps": "8-12",
+            "sets": {
+                "regular": 2,
+                "warmup": 0
+            }
+        },
+        {
+            "exercise": {
+                "id": 1566,
+                "muscles_primary": [
+                    {
+                        "id": 1,
+                        "name": "Biceps",
+                        "name_en_us": "Biceps",
+                        "scientific_name": null,
+                        "url_name": "Biceps",
+                        "description": "The biceps brachii is one of the most often trained muscles. stereotypically most guys want big biceps - and in practice, this is often true. As is commonly known, the main function of the biceps brachii is elbow flexion (what occurs during a curl exercise). However, the biceps have far more responsibilities than just curls.",
+                        "description_en_us": "The biceps brachii is one of the most often trained muscles. stereotypically most guys want big biceps - and in practice, this is often true. As is commonly known, the main function of the biceps brachii is elbow flexion (what occurs during a curl exercise). However, the biceps have far more responsibilities than just curls.",
+                        "lft": 1,
+                        "rght": 6,
+                        "tree_id": 1,
+                        "level": 0,
+                        "parent": null
+                    }
+                ],
+                "category": {
+                    "id": 3,
+                    "name": "Bodyweight",
+                    "name_en_us": "Bodyweight",
+                    "include_in_api": true,
+                    "include_in_workout_generator": true,
+                    "display_order": 2,
+                    "enable": true,
+                    "featured": true,
+                    "image": null,
+                    "mobile_icon": null,
+                    "description": null
+                },
+                "difficulty": {
+                    "id": 4,
+                    "name": "Novice",
+                    "name_en_us": "Novice"
+                },
+                "male_images": [
+                    {
+                        "id": 7150,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-bodyweight-concentration-curl-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-bodyweight-concentration-curl-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-bodyweight-concentration-curl-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-concentration-curl-side.mp4",
+                        "gender": 1,
+                        "exercise": 1566
+                    },
+                    {
+                        "id": 7151,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-male-Bodyweight-bodyweight-concentration-curl-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/male-Bodyweight-bodyweight-concentration-curl-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/male-Bodyweight-bodyweight-concentration-curl-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-concentration-curl-front.mp4",
+                        "gender": 1,
+                        "exercise": 1566
+                    }
+                ],
+                "female_images": [
+                    {
+                        "id": 7156,
+                        "order": 1,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-bodyweight-concentration-curl-front.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-bodyweight-concentration-curl-front.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-bodyweight-concentration-curl-front.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-bodyweight-concentration-curl-front.mp4",
+                        "gender": 2,
+                        "exercise": 1566
+                    },
+                    {
+                        "id": 7157,
+                        "order": 2,
+                        "dst_link": null,
+                        "src_image": null,
+                        "og_image": "https://media.musclewiki.com/media/uploads/og-female-Bodyweight-bodyweight-concentration-curl-side.jpg",
+                        "original_video": "https://media.musclewiki.com/media/uploads/videos/original/female-Bodyweight-bodyweight-concentration-curl-side.mp4",
+                        "unbranded_video": "https://media.musclewiki.com/media/uploads/videos/unbranded/female-Bodyweight-bodyweight-concentration-curl-side.mp4",
+                        "branded_video": "https://media.musclewiki.com/media/uploads/videos/branded/female-Bodyweight-bodyweight-concentration-curl-side.mp4",
+                        "gender": 2,
+                        "exercise": 1566
+                    }
+                ],
+                "full_measure": {
+                    "id": 19,
+                    "measure": {
+                        "id": 7,
+                        "units": [],
+                        "name": "reps"
+                    },
+                    "denominator": null,
+                    "calculation_mode": {
+                        "id": 3,
+                        "name": "SUM",
+                        "description": ""
+                    }
+                },
+                "name": "Bodyweight Concentration Curl",
+                "slug": "bodyweight-concentration-curl",
+                "featured_weight": 2
+            },
+            "fatigue": [
+                {
+                    "muscle_name": "biceps",
+                    "fatigue": 2,
+                    "daily_gradient": "#ff0000",
+                    "weekly_gradient": "#ffcc99"
+                }
+            ],
+            "reps": "20-60s",
+            "sets": {
+                "regular": 2,
+                "warmup": 0
+            }
+        }
+    ],
+    "body_map": [
+        {
+            "muscle_name": "biceps",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#ff0000"
+        },
+        {
+            "muscle_name": "traps-middle",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "lats",
+            "daily_gradient": "#ff9966",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "forearms",
+            "daily_gradient": "#ffcc99",
+            "weekly_gradient": "#f4f7fa"
+        },
+        {
+            "muscle_name": "abdominals",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "calves",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "hamstrings",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#ffcc99"
+        },
+        {
+            "muscle_name": "triceps",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#ff6633"
+        },
+        {
+            "muscle_name": "chest",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "anterior-deltoid",
+            "daily_gradient": "#ffcc66",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "glutes",
+            "daily_gradient": "#ff9966",
+            "weekly_gradient": "#fafdb8"
+        },
+        {
+            "muscle_name": "quads",
+            "daily_gradient": "#ff0000",
+            "weekly_gradient": "#fafdb8"
+        }
+    ]
+}
