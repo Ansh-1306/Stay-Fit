@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <div className="flex flex-col justify-center  items-center w-full h-[100vh] bg-[#1E1E1E] px-8">
       <div
-        className={`xl:max-w-6xl w-full xl:w-1/2 lg:w-1/2 md:w-3/4 p-10 sm:p-16 rounded-md bg-[#2C2F33] `}
+        className={`xl:max-w-6xl w-full xl:w-1/3 lg:w-1/2 md:w-3/4 p-10 sm:p-16 rounded-md bg-[#2C2F33] `}
       >
         <h1 className="text-center text-3xl sm:text-5xl font-semibold text-white">
           Login
@@ -58,7 +58,7 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-md focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="email"
               placeholder="Enter your email"
             />
@@ -66,7 +66,7 @@ const Login = () => {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400  focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
+              className="w-full px-8 py-6 rounded-lg font-medium border-2 border-gray-600 placeholder-gray-400 text-2xl focus:outline-none bg-[#40444B] text-white focus:border-[#E9522C]"
               type="password"
               placeholder="Password"
             />

@@ -58,7 +58,7 @@ const SignUp = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full h-[100vh] bg-[#1E1E1E] px-8">
-      <div className="xl:max-w-6xl w-full xl:w-1/2 lg:w-1/2 md:w-3/4 p-10 sm:p-16 rounded-md bg-[#2C2F33]">
+      <div className="xl:max-w-6xl w-full xl:w-1/3 lg:w-1/2 md:w-3/4 p-10 sm:p-16 rounded-md bg-[#2C2F33]">
         <h1 className="text-center text-3xl sm:text-5xl font-semibold text-white">Register</h1>
         <form onSubmit={handleSubmit} className="w-full mt-10">
           <div className="mx-auto w-full sm:max-w-2xl md:max-w-4xl flex flex-col gap-7">
