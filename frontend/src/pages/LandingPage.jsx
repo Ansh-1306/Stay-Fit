@@ -1,13 +1,16 @@
-﻿import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import Hero from "../components/Hero"
-import About from "../components/About"
-import Blog from "../components/Blog"
-import Goals from "../components/Goals"
-
+﻿import { useDispatch } from "react-redux";
+import { logout, reset } from "../features/auth/authSlice";
+import { useNavigate, Link } from "react-router-dom";
 
 function LandingPage() {
-  const user = localStorage.getItem("user")
+  const user = localStorage.getItem("user");
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const handleLogout = () => {
+    dispatch(logout());
+    dispatch(reset());
+    navigate("/login");
+  };
 
   return (
     <>
@@ -54,12 +57,13 @@ function LandingPage() {
                 </li>
               </ul>
             </nav>
-            {!user ? 
-            <a href='/login' className="btn btn-secondary">
-              Join Now
-            </a> : <button onClick={() => {
-              localStorage.removeItem("user")
-            }}>LogOut</button>}
+            {!user ? (
+              <Link className="btn btn-primary" to="/login">Join Now</Link>
+            ) : (
+              <button onClick={handleLogout} className="btn btn-primary">
+                SignOut
+              </button>
+            )}
             <button
               className="nav-open-btn"
               aria-label="open menu"
@@ -81,7 +85,9 @@ function LandingPage() {
               id="home"
               aria-label="hero"
               data-section
-              style={{ backgroundImage: 'url("./src/assets/images/hero-bg.png")' }}
+              style={{
+                backgroundImage: 'url("./src/assets/images/hero-bg.png")',
+              }}
             >
               <div className="container">
                 <div className="hero-content">
@@ -228,7 +234,8 @@ function LandingPage() {
                 <div
                   className="video-card has-before has-bg-image"
                   style={{
-                    backgroundImage: 'url("./src/assets/images/video-banner.jpg")',
+                    backgroundImage:
+                      'url("./src/assets/images/video-banner.jpg")',
                   }}
                 >
                   <h2 className="h2 card-title">Explore Fitness Life</h2>
@@ -584,7 +591,9 @@ function LandingPage() {
         <footer className="footer">
           <div
             className="section footer-top bg-dark has-bg-image"
-            style={{ backgroundImage: 'url("./src/assets/images/footer-bg.png")' }}
+            style={{
+              backgroundImage: 'url("./src/assets/images/footer-bg.png")',
+            }}
           >
             <div className="container">
               <div className="footer-brand">
@@ -769,6 +778,6 @@ function LandingPage() {
         </a>
       </div>
     </>
-  )
+  );
 }
-export default LandingPage
+export default LandingPage;

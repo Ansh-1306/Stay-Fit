@@ -5,8 +5,10 @@ from django.http import JsonResponse
 from rest_framework.permissions import IsAuthenticated
 import requests
 from django.http import JsonResponse
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
 import json
+from rest_framework.permissions import IsAuthenticated
+
 from .models import *
 from .serializers import (
     UserProfileSerializer, 
@@ -14,16 +16,20 @@ from .serializers import (
 )
 
 @api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def fetch_workout(request):
     url = "https://musclewiki.com/newapi/workout/generator/"
-    data = request.body
-    data = json.loads(data)
+    data = json.loads(request.body)
+
     try:
         response = requests.post(url, json=data)
         if response.status_code == 200:
             return JsonResponse(response.json(), safe=False)
         else:
-            return JsonResponse({"error": "Failed to fetch data from the API", "status_code": response.status_code}, status=response.status_code)
+            return JsonResponse({
+                "error": "Failed to fetch data from the API", 
+                "status_code": response.status_code
+            }, status=response.status_code)
     
     except requests.exceptions.RequestException as e:
         return JsonResponse({"error": "An error occurred while fetching data from the API", "details": str(e)}, status=500)

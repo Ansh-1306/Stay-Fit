@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
+import { toast } from 'react-toastify';
 
 function Data() {
   const [workoutData, setWorkoutData] = useState(null);
@@ -17,11 +16,18 @@ function Data() {
     "goal": 3
   }
   const fetch_workout = async(data) => {
-    const response = await axios.post('http://127.0.0.1:8000/fetch-workout/', data, {
-      headers: {
-        'Content-Type': 'application/json',
-      }})
-    setWorkoutData(response.data)
+    try{
+      const token = JSON.parse(localStorage.getItem('user')).access;
+      const response = await axios.post('http://127.0.0.1:8000/fetch-workout/', data, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        }})
+      setWorkoutData(response.data)
+    }catch (error){
+      toast.error("Error fetching data.")
+      setError("Error fetching data.")
+    }
   }
   useEffect(()=>{
     fetch_workout(data)
