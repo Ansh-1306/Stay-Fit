@@ -5,6 +5,9 @@ import SignUpPage from './pages/SignUpPage'
 import Data from "./templates/Data";
 import Fig from "./components/Fig";
 import Protected from "./components/Protected";
+import Demo from "./templates/Demo"
+import ExercisePage from "./pages/ExercisePage";
+import ExerciseCard from "./components/ExerciseCard";
 
 function App() {
   const router = createBrowserRouter(
@@ -15,6 +18,9 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/fig" element={<Fig />} />
+        <Route path="/nextpage" element={<Demo />} />
+        <Route path="/exercisePage" element={<ExercisePage />} />
+        <Route path="/exerciseComponent" element={<ExerciseCard />} />
         {/* <Route path="/activate/:uid/:token" element={<ActivatePage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/password/reset/confirm/:uid/:token" element={<ResetPasswordPageConfirm />} /> */}
