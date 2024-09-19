@@ -8,7 +8,7 @@ import Protected from "./components/Protected";
 import Demo from "./templates/Demo"
 import ExercisePage from "./pages/ExercisePage";
 import ExerciseCard from "./components/ExerciseCard";
-import ActivationPage from "./components/AcitvationPage";
+import ActivationPage from "./components/ActivationPage";
 import ResetPasswordPage from "./components/ResetPasswordPage"
 import ResetPasswordPageConfirm from "./components/ResetPasswordPageConfirm"
 import { ToastContainer } from"react-toastify";
