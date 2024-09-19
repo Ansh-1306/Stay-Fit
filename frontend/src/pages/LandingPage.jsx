@@ -7,6 +7,8 @@ import Goals from "../components/Goals"
 
 
 function LandingPage() {
+  const user = localStorage.getItem("user")
+
   return (
     <>
       <div>
@@ -52,9 +54,12 @@ function LandingPage() {
                 </li>
               </ul>
             </nav>
+            {!user ? 
             <a href='/login' className="btn btn-secondary">
               Join Now
-            </a>
+            </a> : <button onClick={() => {
+              localStorage.removeItem("user")
+            }}>LogOut</button>}
             <button
               className="nav-open-btn"
               aria-label="open menu"
