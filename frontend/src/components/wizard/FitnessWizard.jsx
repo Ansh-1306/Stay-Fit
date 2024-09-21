@@ -40,7 +40,7 @@ function FitnessWizard() {
   const handleFinish = () => {
     const data = { gender, age, goal, experience, equipment, muscleGroups };
     console.log(data);
-    navigate("/ex", {
+    navigate("/workout-generator", {
       state: { data },
     });
   };
@@ -53,75 +53,76 @@ function FitnessWizard() {
     currentStep >= step ? "bg-blue-600 text-white" : "bg-gray-300 text-gray-500";
 
   return (
-    <div className="wizard-container">
-      <div className="wizard-header flex justify-center space-x-4 my-4">
-        <div className="bg-gray-100 p-12 w-100">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex justify-between items-center mb-8">
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(1)}`}>
-                <DumbbellIcon className="w-6 h-6" />
-              </div>
-              <div className="flex-1 mx-2 h-1 bg-gray-300">
-                {/* <div className="h-full bg-blue-600" style={{ width: `${progressPercentage}%` }}></div> */}
-              </div>
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(2)}`}>
-                <HeartPulseIcon className="w-6 h-6" />
-              </div>
-              <div className="flex-1 mx-2 h-1 bg-gray-300">
-                {/* <div className="h-full bg-blue-600" style={{ width: `${progressPercentage}%` }}></div> */}
-              </div>
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(3)}`}>
-                <TrophyIcon className="w-6 h-6" />
-              </div>
-              <div className="flex-1 mx-2 h-1 bg-gray-300">
-                {/* <div className="h-full bg-blue-600" style={{ width: `${progressPercentage}%` }}></div> */}
-              </div>
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(4)}`}>
-                <ZapIcon className="w-6 h-6" />
-              </div>
-              <div className="flex-1 mx-2 h-1 bg-gray-300">
-                {/* <div className="h-full bg-blue-600" style={{ width: `${progressPercentage}%` }}></div> */}
-              </div>
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(5)}`}>
-                <GoalIcon className="w-6 h-6" />
-              </div>
-              <div className="flex-1 mx-2 h-1 bg-gray-300">
-                {/* <div className="h-full bg-blue-600" style={{ width: `${progressPercentage}%` }}></div> */}
-              </div>
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(6)}`}>
-                <HeartIcon className="w-6 h-6" />
-              </div>
-            </div>
-            <h1 className="text-3xl font-bold text-blue-600">LETS GET STARTED</h1>
+    <div className="wizard-container text-3xl">
+  <div className="wizard-header flex justify-center space-x-4 my-4">
+    <div className="p-20 w-full rounded-lg shadow-lg">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex justify-between items-center mb-8">
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(1)} shadow-lg hover:scale-105 transition-all duration-300`}>
+            <DumbbellIcon className="w-6 h-6" />
+          </div>
+          <div className="flex-1 mx-2 h-1 bg-gray-300 relative">
+            <div className="h-full bg-blue-600 transition-all duration-500 ease-in-out" style={{ width: `${progressPercentage}%` }}></div>
+          </div>
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(2)} shadow-lg hover:scale-105 transition-all duration-300`}>
+            <HeartPulseIcon className="w-6 h-6" />
+          </div>
+          <div className="flex-1 mx-2 h-1 bg-gray-300 relative">
+            <div className="h-full bg-blue-600 transition-all duration-500 ease-in-out" style={{ width: `${progressPercentage}%` }}></div>
+          </div>
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(3)} shadow-lg hover:scale-105 transition-all duration-300`}>
+            <TrophyIcon className="w-6 h-6" />
+          </div>
+          <div className="flex-1 mx-2 h-1 bg-gray-300 relative">
+            <div className="h-full bg-blue-600 transition-all duration-500 ease-in-out" style={{ width: `${progressPercentage}%` }}></div>
+          </div>
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(4)} shadow-lg hover:scale-105 transition-all duration-300`}>
+            <ZapIcon className="w-6 h-6" />
+          </div>
+          <div className="flex-1 mx-2 h-1 bg-gray-300 relative">
+            <div className="h-full bg-blue-600 transition-all duration-500 ease-in-out" style={{ width: `${progressPercentage}%` }}></div>
+          </div>
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(5)} shadow-lg hover:scale-105 transition-all duration-300`}>
+            <GoalIcon className="w-6 h-6" />
+          </div>
+          <div className="flex-1 mx-2 h-1 bg-gray-300 relative">
+            <div className="h-full bg-blue-600 transition-all duration-500 ease-in-out" style={{ width: `${progressPercentage}%` }}></div>
+          </div>
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getIconClasses(6)} shadow-lg hover:scale-105 transition-all duration-300`}>
+            <HeartIcon className="w-6 h-6" />
           </div>
         </div>
-      </div>
-
-      <StepWizard instance={setWizardInstance}>
-        <Step1 gender={gender} setGender={setGender} />
-        <Step2 age={age} setAge={setAge} />
-        <Step3 goal={goal} setGoal={setGoal} />
-        <Step4 experience={experience} setExperience={setExperience} />
-        <Step5 equipment={equipment} setEquipment={setEquipment} />
-        <Step6 muscleGroups={muscleGroups} setMuscleGroups={setMuscleGroups} />
-      </StepWizard>
-
-      <div className="flex justify-between my-4">
-        <button
-          className={`py-2 px-4 bg-gray-300 rounded ${currentStep === 1 ? "opacity-50 cursor-not-allowed" : ""}`}
-          onClick={prevStep}
-          disabled={currentStep === 1}
-        >
-          Previous
-        </button>
-        <button
-          className="py-2 px-4 bg-blue-600 text-white rounded"
-          onClick={currentStep === totalSteps ? handleFinish : nextStep}
-        >
-          {currentStep === totalSteps ? "Finish" : "Next"}
-        </button>
+        <h1 className="text-3xl font-bold text-white">LET'S GET STARTED</h1>
       </div>
     </div>
+  </div>
+
+  <StepWizard instance={setWizardInstance}>
+    <Step1 gender={gender} setGender={setGender} />
+    <Step2 age={age} setAge={setAge} />
+    <Step3 goal={goal} setGoal={setGoal} />
+    <Step4 experience={experience} setExperience={setExperience} />
+    <Step5 equipment={equipment} setEquipment={setEquipment} />
+    <Step6 muscleGroups={muscleGroups} setMuscleGroups={setMuscleGroups} />
+  </StepWizard>
+
+  <div className="flex justify-around my-4">
+    <button
+      className={`py-2 px-4 bg-gray-300 rounded-lg shadow-md ${currentStep === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-400"}`}
+      onClick={prevStep}
+      disabled={currentStep === 1}
+    >
+      Previous
+    </button>
+    <button
+      className="py-2 px-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+      onClick={currentStep === totalSteps ? handleFinish : nextStep}
+    >
+      {currentStep === totalSteps ? "Finish" : "Next"}
+    </button>
+  </div>
+</div>
+
   );
 }
 

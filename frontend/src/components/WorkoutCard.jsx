@@ -1,7 +1,6 @@
-import React from 'react';
-import { Share2 } from 'lucide-react';
+import { Share2 } from 'lucide-react'
 
-export default function ExerciseCard({ title, images, steps }) {
+export default function WorkoutCard({ title, images, steps }) {
   return (
     <div className="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
@@ -33,5 +32,5 @@ export default function ExerciseCard({ title, images, steps }) {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -73,7 +73,7 @@ class Muscle(models.Model):
     level = models.IntegerField()
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.name
     
     class Meta:
@@ -94,7 +94,7 @@ class Category(models.Model):
     mobile_icon = models.ImageField(upload_to='category_icons/', null=True, blank=True)
     description = models.TextField(null=True, blank=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.name
     
     class Meta:
@@ -107,7 +107,7 @@ class Difficulty(models.Model):
     name = models.CharField(max_length=50)
     name_en_us = models.CharField(max_length=50)
 
-    def _str_(self):
+    def __str__(self):
         return self.name
     
     class Meta:
@@ -124,7 +124,7 @@ class Exercise(models.Model):
     target_url_male = models.URLField(max_length=200, null=True, blank=True)
     target_url_female = models.URLField(max_length=200, null=True, blank=True)
  
-    def _str_(self):
+    def __str__(self):
         return self.name
     
     class Meta:

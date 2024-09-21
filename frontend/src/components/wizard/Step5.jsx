@@ -2,39 +2,42 @@
 
 function Step5({ equipment, setEquipment }) {
   const equipmentOptions = [
-    "None",
-    "Dumbbells",
-    "Barbell",
-    "Resistance Bands",
-    "Kettlebell",
-    "Exercise Mat",
-    "Cardio Machine",
+    { id: 45, label: "None" },
+    { id: 2, label: "Dumbbells" },
+    { id: 1, label: "Barbell" },
+    { id: 4, label: "Cardio Machine" },
+    { id: 3, label: "Exercise Mat" },
+    { id: 7, label: "Kettlebell" },
+    { id: 10, label: "Resistance Bands" },
   ];
 
-  const handleCheckboxChange = (index) => {
+  const handleCheckboxChange = (id) => {
     setEquipment((prev) => {
-      if (prev.includes(index)) {
-        return prev.filter((item) => item !== index);
+      if (prev.includes(id)) {
+        return prev.filter((item) => item !== id);
       } else {
-        return [...prev, index];
+        return [...prev, id];
       }
     });
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-4">Select Your Equipment</h2>
-      <div className="space-y-2">
-        {equipmentOptions.map((option,index) => (
-          <label key={index+1} className="flex items-center">
+    <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md max-w-lg mx-auto">
+      <h2 className="text-3xl font-semibold mb-6 text-gray-800">Select Your Equipment</h2>
+      <div className="space-y-4 w-full">
+        {equipmentOptions.map((option) => (
+          <label
+            key={option.id}
+            className="flex items-center p-4 bg-gray-100 rounded-lg hover:bg-gray-200 cursor-pointer transition-colors duration-200"
+          >
             <input
               type="checkbox"
-              value={index+1}
-            //   checked={equipment.includes(option)}
-              onChange={() => handleCheckboxChange(index+1)}
-              className="mr-2"
+              value={option.id}
+              checked={equipment.includes(option.id)}
+              onChange={() => handleCheckboxChange(option.id)}
+              className="form-checkbox text-blue-600 h-5 w-5"
             />
-            {option}
+            <span className="ml-3 text-gray-700">{option.label}</span>
           </label>
         ))}
       </div>

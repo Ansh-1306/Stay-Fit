@@ -6,7 +6,7 @@ class Command(BaseCommand):
     help = 'Load data from JSON file into the database'
 
     def handle(self, *args, **kwargs):
-        with open('C:/Users/patel/Desktop/Projects Sem 4/Stay-Fit/exercises.json', encoding='utf-8') as file:
+        with open('D:\Sem 4 Projects\Group Project\Stay-Fit\exercises.json', encoding='utf-8') as file:
             data = json.load(file)
 
         for entry in data:
