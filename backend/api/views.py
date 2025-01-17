@@ -10,10 +10,7 @@ import json
 from rest_framework.permissions import IsAuthenticated
 
 from .models import *
-from .serializers import (
-    UserProfileSerializer, 
-    CreateUserSerializer
-)
+from .serializers import *
 
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
@@ -55,3 +52,42 @@ class UserProfileDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = UserProfiles.objects.all()
     serializer_class = UserProfileSerializer
 
+class MuscleListCreateView(generics.ListCreateAPIView):
+    queryset = Muscle.objects.all()
+    serializer_class = MuscleSerializer
+
+class MuscleRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Muscle.objects.all()
+    serializer_class = MuscleSerializer
+
+class CategoryListCreateView(generics.ListCreateAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+class CategoryRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+class DifficultyListCreateView(generics.ListCreateAPIView):
+    queryset = Difficulty.objects.all()
+    serializer_class = DifficultySerializer
+
+class DifficultyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Difficulty.objects.all()
+    serializer_class = DifficultySerializer
+
+class ExerciseListCreateView(generics.ListCreateAPIView):
+    queryset = Exercise.objects.all()
+    serializer_class = ExerciseSerializer
+
+class ExerciseRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Exercise.objects.all()
+    serializer_class = ExerciseSerializer
+
+class WorkoutListCreateView(generics.ListCreateAPIView):
+    queryset = Workout.objects.all()
+    serializer_class = WorkoutSerializer
+
+class WorkoutRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Workout.objects.all()
+    serializer_class = WorkoutSerializer

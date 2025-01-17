@@ -78,3 +78,8 @@ class ExerciseAdmin(admin.ModelAdmin):
     search_fields = ('name',)
     list_filter = ('category', 'difficulty')
     filter_horizontal = ('muscles',)  # For ManyToMany fields like muscles
+    
+@admin.register(Workout)
+class WorkoutAdmin(admin.ModelAdmin):
+    list_display = ('name', 'user_id')
+    search_fields = ('name',)

@@ -130,3 +130,8 @@ class Exercise(models.Model):
     class Meta:
         verbose_name = _("Exercise")
         verbose_name_plural = _("Exercises")
+        
+class Workout(models.Model):
+    name = models.CharField(max_length=100)
+    user_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    payload = models.CharField(max_length=90000)
