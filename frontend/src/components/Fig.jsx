@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 function Fig() {
   return (
     <>
-      <div className="flex justify-center 2xl:flex-nowrap w-1/2 px-10 gap-x-20">
+      <div className="flex justify-center items-center p-28">
+      <div className="flex justify-center items-center gap-x-20">
         <svg
           viewBox="0 0 660.46 1206.46"
           fill="none"
@@ -31,7 +32,7 @@ function Fig() {
               />
             </radialGradient>
           </defs>
-          <Link to="/nextpage" state={{id: "calves"}}><g
+          <Link to="/calves" state={{id: "calves"}}><g
             id="calves"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -44,7 +45,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "quads"}}><g
+          <Link to="/quads" state={{id: "quads"}}><g
             id="quads"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -57,7 +58,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "abdominals"}}><g
+          <Link to="/abdominals" state={{id: "abdominals"}}><g
             id="abdominals"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -66,7 +67,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "obliques"}}><g
+          <Link to="/obliques" state={{id: "obliques"}}><g
             id="obliques"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -80,7 +81,7 @@ function Fig() {
               strokeWidth={0}
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "hands"}}><g
+          <Link to="/hands" state={{id: "hands"}}><g
             id="hands"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -102,7 +103,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "forearms"}}><g
+          <Link to="/forearms" state={{id: "forearms"}}><g
             id="forearms"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -115,7 +116,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "biceps"}}><g
+          <Link to="/triceps" state={{id: "biceps"}}><g
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
             id="biceps"
           >
@@ -128,7 +129,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "front-shoulders"}}><g
+          <Link to="/shoulders" state={{id: "front-shoulders"}}><g
             id="front-shoulders"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -141,7 +142,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "chest"}}><g
+          <Link to="/chest" state={{id: "chest"}}><g
             id="chest"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -155,7 +156,7 @@ function Fig() {
               strokeWidth={0}
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "traps"}}><g
+          <Link to="/traps" state={{id: "traps"}}><g
             id="traps"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -168,7 +169,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "body"}}><g id="body" className="body-map__model">
+          <Link to="/" state={{id: "body"}}><g id="body" className="body-map__model">
             <line
               x1="330.4"
               y1="504.57"
@@ -585,7 +586,7 @@ function Fig() {
               strokeLinejoin="round"
               strokeWidth="3.46"
             />
-            <Link to="/nextpage" state={{id: ""}}><g>
+            <Link to="/" state={{id: ""}}><g>
               <path
                 d="M370.84,135.77s-10.57,20.48-40.26,25.91"
                 fill="none"
@@ -607,269 +608,6 @@ function Fig() {
               d="M282.69,83.67c-5.36-3.86-3.61-20.07-6.05-37.39-2.56-18.19,16.27-32.16,24.89-34.59,5.86-1.65-18.28,1.29,6.39-6.76s33.37,2.13,37.66,3.41c3.74-.45-9.93-8.43,11.87-1.12,20.36,6.82,23.77,22.8,22.07,39.35-2.2,21.32,2.15,29.08-1.76,37.1"
               fill="none"
               stroke="#484a68"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "shoulders"}}><g id="shoulders" className="hidden">
-            <ellipse
-              id="hover-2"
-              data-name="hover"
-              cx="441.13"
-              cy="261.13"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover"
-              cx="219.33"
-              cy="261.13"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="441.13"
-              cy="261.13"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-            <ellipse
-              cx="219.33"
-              cy="261.13"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "elbow"}}><g id="elbow" className="hidden">
-            <ellipse
-              id="hover-3"
-              data-name="hover"
-              cx="118.6"
-              cy="412.77"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-7"
-              data-name="hover"
-              cx="541.86"
-              cy="412.77"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="541.86"
-              cy="412.77"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-            <ellipse
-              cx="118.6"
-              cy="412.77"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "wrist"}}><g id="wrist" className="hidden">
-            <ellipse
-              id="hover-4"
-              data-name="hover"
-              cx="42.41"
-              cy="531.02"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-8"
-              data-name="hover"
-              cx="618.05"
-              cy="531.02"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="618.05"
-              cy="531.02"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-            <ellipse
-              cx="42.41"
-              cy="531.02"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "hips"}}><g id="hips" className="hidden">
-            <ellipse
-              id="hover-6"
-              data-name="hover"
-              cx="412.75"
-              cy="523.37"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-5"
-              data-name="hover"
-              cx="247.71"
-              cy="523.37"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="412.75"
-              cy="523.37"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-            <ellipse
-              cx="247.71"
-              cy="523.37"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "knees"}}><g id="knees" className="hidden">
-            <ellipse
-              id="hover-10"
-              data-name="hover"
-              cx="419.37"
-              cy="874.7"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-9"
-              data-name="hover"
-              cx="241.09"
-              cy="874.7"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="419.37"
-              cy="874.7"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-            <ellipse
-              cx="241.09"
-              cy="874.7"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "ankles"}}><g id="ankles" className="hidden">
-            <ellipse
-              id="hover-11"
-              data-name="hover"
-              cx="221.14"
-              cy="1105.65"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-12"
-              data-name="hover"
-              cx="439.32"
-              cy="1105.65"
-              rx="24.71"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="439.32"
-              cy="1105.65"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.46"
-            />
-            <ellipse
-              cx="221.14"
-              cy="1105.65"
-              rx="12.04"
-              ry="12.3"
-              fill="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="3.46"
@@ -901,7 +639,7 @@ function Fig() {
               />
             </radialGradient>
           </defs>
-          <Link to="/nextpage" state={{id: "calves"}}><g
+          <Link to="/calves" state={{id: "calves"}}><g
             id="calves"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -914,7 +652,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "hamstrings"}}><g
+          <Link to="/hamstrings" state={{id: "hamstrings"}}><g
             id="hamstrings"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -927,7 +665,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "glutes"}}><g
+          <Link to="/glutes" state={{id: "glutes"}}><g
             id="glutes"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -940,7 +678,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "hands"}}><g
+          <Link to="/hands" state={{id: "hands"}}><g
             id="hands"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -961,7 +699,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "forearms"}}><g
+          <Link to="/forearms" state={{id: "forearms"}}><g
             id="forearms"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -974,7 +712,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "triceps"}}><g
+          <Link to="/triceps" state={{id: "triceps"}}><g
             id="triceps"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -987,7 +725,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "lats"}}><g
+          <Link to="/lats" state={{id: "lats"}}><g
             id="lats"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -1000,7 +738,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "lowerback"}}><g
+          <Link to="/lowerback" state={{id: "lowerback"}}><g
             id="lowerback"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -1009,7 +747,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "traps-middle"}}><g
+          <Link to="/traps-middle" state={{id: "traps-middle"}}><g
             id="traps-middle"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -1018,7 +756,7 @@ function Fig() {
               fill="currentColor"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "rear-shoulders"}}><g
+          <Link to="/shoulders" state={{id: "rear-shoulders"}}><g
             id="rear-shoulders"
             className="bodymap text-mw-gray active:text-mw-red-700 lg:hover:text-mw-red-100"
           >
@@ -1259,7 +997,7 @@ function Fig() {
               strokeLinejoin="round"
               strokeWidth="3.52"
             />
-            <Link to="/nextpage" state={{id: ""}}><g>
+            <Link to="/" state={{id: ""}}><g>
               <path
                 d="M228.95,211.29c1.57-.7,9.71-6.15,14.7-8.41s25.39-10.44,30.52-12.98c5.14-2.54,14.41-11.57,14.41-11.57l.25-3.16c.72-7.78,1.02-39.35,1.02-39.35-2.91-5.76-3.49-15.57-3.49-15.57-7.29,1.44-12.53-1.87-13.99-21.04-.83-10.94,2.52-14.45,5.55-15.44"
                 fill="none"
@@ -1294,272 +1032,8 @@ function Fig() {
               strokeWidth="3.52"
             />
           </g></Link>
-          <Link to="/nextpage" state={{id: "ankles"}}><g id="ankles" className="hidden">
-            <ellipse
-              id="hover-9"
-              data-name="hover"
-              cx="445.81"
-              cy="1119.64"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-8"
-              data-name="hover"
-              cx="214.71"
-              cy="1119.64"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="214.71"
-              cy="1119.64"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-            <ellipse
-              cx="445.81"
-              cy="1119.64"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "knees"}}><g id="knees" className="hidden">
-            <ellipse
-              id="hover-7"
-              data-name="hover"
-              cx="237.16"
-              cy="879.63"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-10"
-              data-name="hover"
-              cx="423.36"
-              cy="879.63"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="423.36"
-              cy="879.63"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-            <ellipse
-              cx="237.16"
-              cy="879.63"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "wrist"}}><g id="wrist" className="hidden">
-            <ellipse
-              id="hover-6"
-              data-name="hover"
-              cx="30.54"
-              cy="548.63"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-11"
-              data-name="hover"
-              cx="629.98"
-              cy="548.63"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="629.98"
-              cy="548.63"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-            <ellipse
-              cx="30.54"
-              cy="548.63"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "elbow"}}><g id="elbow" className="hidden">
-            <ellipse
-              id="hover-5"
-              data-name="hover"
-              cx="119.84"
-              cy="396.23"
-              rx="25.53"
-              y="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-12"
-              data-name="hover"
-              cx="540.68"
-              cy="396.23"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="540.68"
-              cy="396.23"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-            <ellipse
-              cx="119.84"
-              cy="396.23"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "upper-spine"}}><g id="upper-spine" className="hidden">
-            <ellipse
-              id="hover"
-              cx="330.26"
-              cy="209.3"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="330.26"
-              cy="209.3"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "scapula"}}><g id="scapula" className="hidden">
-            <ellipse
-              id="hover-2"
-              data-name="hover"
-              cx="240.12"
-              cy="271.32"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              id="hover-3"
-              data-name="hover"
-              cx="420.4"
-              cy="271.32"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="420.4"
-              cy="271.32"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-            <ellipse
-              cx="240.12"
-              cy="271.32"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
-          <Link to="/nextpage" state={{id: "lowerspine"}}><g id="lower-spine" className="hidden">
-            <ellipse
-              id="hover-4"
-              data-name="hover"
-              cx="330.26"
-              cy="491.77"
-              rx="25.53"
-              ry="25.24"
-              fill="url(#jointradial)"
-              opacity={1}
-              strokeWidth={0}
-            />
-            <ellipse
-              cx="330.26"
-              cy="491.77"
-              rx="12.44"
-              ry="12.3"
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3.52"
-            />
-          </g></Link>
         </svg>
+      </div>
       </div>
     </>
   );

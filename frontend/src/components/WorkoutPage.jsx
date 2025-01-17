@@ -1,5 +1,4 @@
-import React from 'react';
-import ExerciseCard from './ExerciseCard';
+import WorkoutCard from './WorkoutCard.jsx'
 
 const exerciseData = {
   title: "Machine Pec Fly",
@@ -12,18 +11,18 @@ const exerciseData = {
     "Slowly bring handles together in front, keeping tension. Focus on squeezing chest muscles.",
     "Return handles to starting position with controlled motion. Keep chest up throughout. Repeat for reps."
   ]
-};
+}
 
-export default function ExercisePage() {
+export default function WorkoutPage() {
   return (
     <div className="bg-gray-100 min-h-screen py-8">
       <div className="container mx-auto">
-        <ExerciseCard 
+        <WorkoutCard 
           title={exerciseData.title} 
           images={exerciseData.images} 
           steps={exerciseData.steps} 
         />
       </div>
     </div>
-  );
+  )
 }

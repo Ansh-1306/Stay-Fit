@@ -4,8 +4,8 @@ import { useNavigate, Link } from "react-router-dom";
 
 function LandingPage() {
   const user = localStorage.getItem("user");
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleLogout = () => {
     dispatch(logout());
     dispatch(reset());
@@ -21,7 +21,7 @@ function LandingPage() {
               <ion-icon name="barbell-sharp" aria-hidden="true" />
               <span className="span">Fitlife</span>
             </a>
-            <nav className="navbar" data-navbar>
+            {/* <nav className="navbar flex justify-center" data-navbar>
               <button
                 className="nav-close-btn"
                 aria-label="close menu"
@@ -56,14 +56,83 @@ function LandingPage() {
                   </a>
                 </li>
               </ul>
-            </nav>
+            
             {!user ? (
-              <Link className="btn btn-primary" to="/login">Join Now</Link>
+              <Link className="btn btn-primary" to="/login">
+                Join Now
+              </Link>
             ) : (
-              <button onClick={handleLogout} className="btn btn-primary">
-                SignOut
-              </button>
+              <>
+                <Link to="/wizard" className="navbar-link" data-nav-link>
+                  Workout Generator
+                </Link>
+                <Link to="/fig" className="navbar-link" data-nav-link>
+                  Body Map
+                </Link>
+                <button onClick={handleLogout} className="btn btn-primary btn-sm">
+                  SignOut
+                </button>
+              </>
             )}
+            </nav> */}
+            <nav className="navbar flex justify-between items-center px-6" data-navbar>
+  <button
+    className="nav-close-btn"
+    aria-label="close menu"
+    data-nav-toggler
+  >
+    <ion-icon name="close-sharp" aria-hidden="true" />
+  </button>
+  
+  <ul className="navbar-list flex space-x-6">
+    <li>
+      <a href="#home" className="navbar-link active" data-nav-link>
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="#about" className="navbar-link" data-nav-link>
+        About Us
+      </a>
+    </li>
+    <li>
+      <a href="#class" className="navbar-link" data-nav-link>
+        Classes
+      </a>
+    </li>
+    <li>
+      <a href="#blog" className="navbar-link" data-nav-link>
+        Blog
+      </a>
+    </li>
+    <li>
+      <a href="#" className="navbar-link" data-nav-link>
+        Contact Us
+      </a>
+    </li>
+  </ul>
+
+  <div className="flex space-x-4">
+    {!user ? (
+      <Link className="btn btn-primary" to="/login">
+        Join Now
+      </Link>
+    ) : (
+      <>
+        <Link to="/wizard" className="navbar-link mt-7" data-nav-link>
+          Workout Generator
+        </Link>
+        <Link to="/fig" className="navbar-link mt-7" data-nav-link>
+          Body Map
+        </Link>
+        <button onClick={handleLogout} className="btn btn-primary btn-sm">
+          SignOut
+        </button>
+      </>
+    )}
+  </div>
+</nav>
+
             <button
               className="nav-open-btn"
               aria-label="open menu"

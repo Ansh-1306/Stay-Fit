@@ -21,7 +21,6 @@ function Data() {
       const response = await axios.post('http://127.0.0.1:8000/fetch-workout/', data, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
         }})
       setWorkoutData(response.data)
     }catch (error){
